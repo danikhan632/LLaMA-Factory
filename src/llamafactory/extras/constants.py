@@ -32,7 +32,7 @@ CHECKPOINT_NAMES = {
 
 CHOICES = ["A", "B", "C", "D"]
 
-DATA_CONFIG = "dataset_info.json"
+DATA_CONFIG = os.environ.get('DATASET_INFO', "dataset_info.json")
 
 DEFAULT_TEMPLATE = defaultdict(str)
 
